@@ -29,11 +29,6 @@ def reload_chat():
 
 def main():
     st.title("Simple Chat 😎")
-    if st.button("Reload"):
-        reload_chat()
-    if st.button("Delete Chat History"):
-        delete_chat_history()
-        st.rerun()  
         
     if "messages" not in st.session_state:
         st.session_state["messages"] = load_chat_history()
@@ -52,6 +47,13 @@ def main():
         
         save_chat_history(st.session_state["messages"])
         reload_chat()
+        
+    if st.button("Reload"):
+        reload_chat()
+        
+    if st.button("Delete Chat History"):
+        delete_chat_history()
+        st.rerun()   
         
 if __name__ == "__main__":
     main()
