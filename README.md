@@ -2,6 +2,7 @@
 A simple web chat built in Python
 
 ![Screenshot from 2025-02-06 13-36-06](https://github.com/user-attachments/assets/9179f558-2443-4618-a090-e642bffdccfa)
+![Screenshot from 2025-02-06 13-58-20](https://github.com/user-attachments/assets/20104b35-0759-43a0-9fe5-e668cab00821)
 
 # Online
 Access online in the link:
