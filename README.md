@@ -6,6 +6,7 @@ A simple web chat built in Python
 # Online
 Access online in the link:
 https://simple-web-chat-rubenxi.streamlit.app/
+
 Please note that the website is public and not moderated. I am not responsible for what anonymous users write in the chat. This is simply a test application I created to learn.
 
 # Requirements
