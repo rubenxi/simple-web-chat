@@ -51,7 +51,7 @@ def main():
             st.markdown(user_input)
         
         save_chat_history(st.session_state["messages"])
-        
+        reload_chat()
         
 if __name__ == "__main__":
     main()
