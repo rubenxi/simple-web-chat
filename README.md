@@ -1,8 +1,9 @@
 # simple-web-chat
 A simple web chat built in Python
 
-![Screenshot from 2025-02-06 13-36-06](https://github.com/user-attachments/assets/9179f558-2443-4618-a090-e642bffdccfa)
-![Screenshot from 2025-02-06 13-58-20](https://github.com/user-attachments/assets/20104b35-0759-43a0-9fe5-e668cab00821)
+![Screenshot from 2025-02-07 09-29-40](https://github.com/user-attachments/assets/e6076df1-46d1-4cb6-976e-f3b2f33479e6)
+![Screenshot from 2025-02-07 09-31-32](https://github.com/user-attachments/assets/b767d892-eb10-4703-b669-56e33725b066)
+
 
 # Online
 Access online in the link:
