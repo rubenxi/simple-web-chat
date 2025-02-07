@@ -28,7 +28,7 @@ def reload_chat():
     st.rerun()
 
 def main():
-    st.title("Simple Chat 😎")
+    st.sidebar.title("Simple Chat 😎")
         
     if "messages" not in st.session_state:
         st.session_state["messages"] = load_chat_history()
@@ -36,7 +36,16 @@ def main():
     for message in st.session_state["messages"]:
         with st.chat_message(message["role"]):
             st.markdown(message["content"])
-  
+            
+    st.sidebar.divider()
+    
+    if st.sidebar.button("Reload"):
+        reload_chat()
+        
+    if st.sidebar.button("Delete Chat History"):
+        delete_chat_history()
+        st.rerun()  
+        
     user_input = st.chat_input("Type your message...")
     if user_input:
         st.session_state["messages"].append({"role": "user", "content": user_input})
@@ -48,12 +57,6 @@ def main():
         save_chat_history(st.session_state["messages"])
         reload_chat()
         
-    if st.button("Reload"):
-        reload_chat()
-        
-    if st.button("Delete Chat History"):
-        delete_chat_history()
-        st.rerun()   
         
 if __name__ == "__main__":
     main()
