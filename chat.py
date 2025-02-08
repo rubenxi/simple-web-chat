@@ -1,6 +1,9 @@
 import streamlit as st
 import pickle
 import os
+from streamlit_autorefresh import st_autorefresh
+
+st_autorefresh(interval=2000)
 
 data_file = "chat_history.pkl"
 
@@ -60,3 +63,4 @@ def main():
         
 if __name__ == "__main__":
     main()
+
